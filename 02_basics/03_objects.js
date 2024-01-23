@@ -1,30 +1,37 @@
 // singleton
 // Object.create
 
-// object literals
-
 const mySym = Symbol("key1")
 
+// object literals
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Sourabh",
+    "full name": "Sourabh Jaishwal",
     [mySym]: "mykey1",
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    location: "Mumbai",
+    email: "sourabh@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+/*
 
-JsUser.email = "hitesh@chatgpt.com"
+// Accessing the object data
+
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym])
+*/
+
+
+// Object.freeze method
+
+JsUser.email = "sourabh@chatgpt.com"
 // Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "sourabh@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
