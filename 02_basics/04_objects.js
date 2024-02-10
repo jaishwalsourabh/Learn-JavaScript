@@ -3,6 +3,8 @@
 // const tinderUser = new Object()
 const tinderUser = {}
 
+// created a dummy object
+
 // adding the data inside the object
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
