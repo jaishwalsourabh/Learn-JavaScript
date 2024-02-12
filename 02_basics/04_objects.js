@@ -1,9 +1,9 @@
+// More on Objects
 // creating empty objects
 
 // const tinderUser = new Object()
 const tinderUser = {}
 
-// created a dummy object
 
 // adding the data inside the object
 tinderUser.id = "123abc"
@@ -68,29 +68,33 @@ users[1].email
 
 
 
-// some other methods
-
+// Object Destructing
 const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
 }
 
-// course.courseInstructor
+const {courseInstructor: Instructor} = course
 
-const {courseInstructor: instructor} = course
+// console.log(course.Instructor);
+console.log(Instructor);
 
-// console.log(courseInstructor);
-console.log(instructor);
 
-// {
-//     "name": "hitesh",
-//     "coursename": "js in hindi",
-//     "price": "free"
-// }
 
+// API Introduction -> JSON API
+
+/*
+{
+    "name": "hitesh",
+    "courseName": "js course",
+    "price": "free"
+}
+*/
+
+// A normal API template
 [
-    {},
-    {},
+    {}, 
+    {}, 
     {}
 ]
