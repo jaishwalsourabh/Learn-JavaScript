@@ -1,2 +1,0 @@
-// test function
-// arrow function
